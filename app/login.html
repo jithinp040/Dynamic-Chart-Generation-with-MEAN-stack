@@ -1,0 +1,31 @@
+<div class="model">
+  <div class="model-head">
+    <h2>User Login</h2>
+  </div>
+  <form method="POST" ng-submit="login()" novalidate>
+    <div class="model-body">
+      <div class="form-field">
+        <label>User Name:</label><input type="text" name="name" ng-model="loginform.name" class="form-control">
+      </div>
+      <div class="form-field">
+        <label>Password:</label><input type="password" name="pass"  ng-model="loginform.pass" class="form-control">
+        <span ng-show="loginform.pass.$invalid && !loginform.pass.$pristine" class="help-block">Type the Pass</span>
+      </div>
+      <button type="submit" class="goodbtn">Login</button>
+    </div>
+  </form>
+  <div class="model-foot">
+    <a href="#!/reg">If you are not a normal user,click here to register</a>
+  </div>
+  <div ng-class=stats>
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>{{message}}</p>
+        <center><input type="button" class="goodbtn" ng-click="relink()" value="OK"></center>
+      </div>
+    </div>
+
+  </div>
+</div>

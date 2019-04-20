@@ -1,0 +1,217 @@
+/*Font declarations(Custom Fonts) done here*/
+@font-face {
+    font-family: 'Meri-reg';
+    src: url('fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Meri-bol';
+    src: url('fonts/Merriweather-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Meri-bla';
+    src: url('fonts/Merriweather-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Rob-bol';
+    src: url('fonts/RobotoSlab-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Rob-reg';
+    src: url('fonts/RobotoSlab-Regular.ttf');
+}
+
+/*Font declaration(Custom Fonts) ends here*/
+
+/*Styling of the header present in all pages starts here*/
+.container {
+    height: 100px;
+    display: inline-block;
+    background-color: rgb(50, 54, 50);
+    color: whitesmoke;
+    font-family: 'Meri-bla', sans-serif !important;
+    font-weight: 600;
+    align-self: center !important;
+    width: 100%;
+    margin: -10px;
+    z-index:2;
+}
+
+body {
+    font-family: 'Meri-reg', sans-serif;
+    background-color: whitesmoke;
+}
+
+#main-logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*Styling of the header present in all pages ends here*/
+
+/*Styling for the fonts and the template pages starts here*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'meri-bol', sans-serif !important;
+}
+
+input[type=button],
+button {
+    font-family: 'Meri-reg', sans-serif;
+    padding: 17px 15px 17px 15px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.goodbtn {
+    background-color: rgb(1, 72, 179);
+}
+
+.goodbtn:hover {
+    background-color: rgb(73, 114, 175);
+    transition: 0.4s;
+}
+
+.help-block {
+    color: red;
+}
+
+.model {
+    margin: 50px auto;
+    background-color: white;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.model-head {
+    padding: 25px;
+    border-bottom: 1px solid grey;
+    background-color: rgb(206, 200, 197);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.model-body {
+    padding: 25px 50px 20px 50px;
+    border-bottom: 1px solid grey;
+}
+
+.model-foot {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    background-color: rgb(206, 200, 197);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form-field,
+label,
+input {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    font-family: 'Rob-reg', sans-serif !important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.sidenav {
+    height: 100%;
+    width: 250;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin-top:5px;
+}
+
+.sidenav li {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav li:hover {
+    color: #f1f1f1;
+    background-color: black;
+}
+.report {
+    width: 85%;
+    margin-top: 50px;
+    float: right;
+}
+.report-content-head{
+    width:75%;
+text-align:center;
+}
+
+.report-content-body{
+    width:83%;
+    text-align:left;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+
+  /* Modal Content */
+/*Styling for the fonts and the template pages ends here*/
+

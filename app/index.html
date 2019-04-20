@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>MiniProject</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <script src="redis/angular.min.js"></script>
+    <script src="redis/angular-route.js"></script>
+    <script src="redis/chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="redis/jquery-1.11.2.min.js"></script>
+</head>
+
+<body ng-app="Minipro" ng-controller="head" >
+    <div class="container">
+        <div class="head">
+            <img id="main-logo" width="100px" height="100px" src="logo.jpg">
+            <span class={{stat}} style="float:right;margin-top:-80px;margin-right:60px;"> Welcome {{uname}} <br> Have a Nice day <br><a href="#!/">Logout</a></span>
+        </div>
+    </div>
+        <div class="render" ng-view></div>
+    
+</body>

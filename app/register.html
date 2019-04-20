@@ -1,0 +1,50 @@
+<div>
+    <div class="model">
+        <div class="model-head">
+            <h2>User Registration</h2>
+        </div>
+        <form method="POST" ng-submit="registration()" novalidate>
+            <div class="model-body">
+                <div class="form-field">
+                    <label>Name:</label><input type="text" name="name" ng-model="regform.name" class="form-control">
+                    <span ng-show="regform.name.$invalid && !regform.name.$pristine" class="help-block">Something
+                        is wrong here</span>
+                </div>
+                <div class="form-field">
+                    <label>User Name:</label><input type="text" name="uname" ng-model="regform.uname" class="form-control">
+                    <span ng-show="namecheck()" class="help-block">Something is wrong here</span>
+                </div>
+                <div class="form-field">
+                    <label>Email:</label><input type="text" name="email" ng-change="emailcheck()" ng-model="regform.email"
+                        class="form-control">
+                    <span ng-show="!validemail" class="help-block">Something is wrong here</span>
+                </div>
+                <div class="form-field">
+                    <label>Password:</label><input ng-minlength="8" ng-change="passcheck()" type="password" name="pass"
+                        ng-model="regform.pass" class="form-control">
+                    <span ng-show="!validpass" class="help-block">Password is not strong</span>
+                </div>
+                <div class="form-field">
+                    <label>Confirm Password:</label><input type="password" ng-blur="passequ()" name="cpsd" ng-model="regform.cpsd"
+                        class="form-control">
+                    <span ng-show="!samepass" class="help-block">Passwords do not match</span>
+                </div>
+            </div>
+            <div class="model-foot">
+                <button ng-disabled="regform.$invalid || regform.$pending" type="submit"
+                    class="goodbtn">Register</button>
+                <button ng-disabled="regform.$invalid" type="reset" class="goodbtn">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div ng-class=stats>
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-body">
+            <p>{{message}}</p>
+            <center><input type="button" class="goodbtn" ng-click="relink()" value="OK"></center></div>
+        </div>
+
+    </div>
+</div>
